@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/hinh_nen_dang_nhap"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp" />
+
+    <TextView
+        android:id="@+id/txtViewGoTravel9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#ff0000"
+        android:shadowRadius="2"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:text="Go Travel District 9"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:text="Xin vui lòng đợi đôi chút"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="102dp"
+        android:layout_height="94dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:layout_toStartOf="@+id/progressBar"
+        android:background="@android:color/transparent"
+        android:src="@drawable/huy_hieu_doan"/>
+
+    <ImageView
+        android:layout_width="102dp"
+        android:layout_height="94dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/logo_go9" />
+
+
+</RelativeLayout>

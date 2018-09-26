@@ -11,4 +11,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="102dp"
         android:text="Đây là màn hình @string/nav_menu" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="93dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="155dp"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="visible" />
 </RelativeLayout>
