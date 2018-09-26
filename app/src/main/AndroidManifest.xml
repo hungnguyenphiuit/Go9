@@ -22,6 +22,25 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name=".View.TrangChu.ListMenu.ChinhSachSuDung" android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".View.TrangChu.ListMenu.DuongDayNongPackage.DuongDayNong"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".View.TrangChu.ListMenu.PhanHoiSanPham" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".View.TrangChu.ListMenu.CaiDat" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".View.TrangChu.ListMenu.ThongKe" android:screenOrientation="portrait">
+
+        </activity>
+
     </application>
 
 </manifest>
