@@ -1,14 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:id="@+id/sortDropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrainPanel"
+        android:layout_width="392dp"
+        android:layout_height="239dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sortDropDown"
+        android:padding="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sortDropDown">
+
+        <ImageView
+            android:id="@+id/saleImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/prizetext"
+            android:src="@drawable/food" />
+
+        <TextView
+            android:id="@+id/diadiemtext"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/saleImage"
+            android:gravity="center"
+            android:text="Nhà hàng Sushi Hokaido"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/restTime"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/diadiemtext"
+            android:layout_below="@+id/diadiemtext"
+            android:gravity="center"
+            android:text="Còn 49:37:12 giờ"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diadiemtext" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="76dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/constrainPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:background="@null"
+        android:contentDescription="sdf"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/addbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constrainPanel" />
 
     <TextView
-        android:id="@+id/textViewPrizeTitle"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="95dp"
-        android:text="Đây là màn hình chứa các phần thưởng của bạn" />
-</RelativeLayout>
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Thêm phần thưởng"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorToolBar"
+        android:minHeight="?android:attr/actionBarSize"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prizetext"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+9
+Suoi_tien 120000
+KhuDL_BCR 100000
+Suoi_mo 70000
+Bao_tang_ao_dai 30000
+Chua_buu_long 0
+Long_Island 100000
+Dam_sen_Tam_da 30000
+Chua_Phuoc_tuong 0
+Den_tuong_bien_noc 0
+Start 0
