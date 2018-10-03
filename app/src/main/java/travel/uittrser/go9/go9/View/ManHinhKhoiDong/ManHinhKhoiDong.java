@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import travel.uittrser.go9.go9.R;
+import travel.uittrser.go9.go9.View.TrangChu.Login;
 import travel.uittrser.go9.go9.View.TrangChu.TrangChuActivity;
 
 public class ManHinhKhoiDong extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class ManHinhKhoiDong extends AppCompatActivity {
 
                 }
                 finally {
-                    Intent iTrangChu = new Intent(ManHinhKhoiDong.this,TrangChuActivity.class);
+                    Intent iTrangChu = new Intent(ManHinhKhoiDong.this,Login.class);
                     startActivity(iTrangChu);
                     finish();
                 }

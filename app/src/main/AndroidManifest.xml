@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="travel.uittrser.go9.go9">
 
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.ManHinhKhoiDong.ManHinhKhoiDong"
+        <activity
+            android:name=".View.ManHinhKhoiDong.ManHinhKhoiDong"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 
         <activity android:name=".View.TrangChu.TrangChuActivity"
             android:screenOrientation="portrait">
@@ -41,6 +46,39 @@
 
         </activity>
 
+=======
+        <activity
+            android:name=".View.TrangChu.TrangChuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.TrangChu.ListMenu.ChinhSachSuDung"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.TrangChu.ListMenu.DuongDayNongPackage.DuongDayNong"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.TrangChu.ListMenu.PhanHoiSanPham"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.TrangChu.ListMenu.CaiDat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.TrangChu.ListMenu.ThongKe"
+            android:screenOrientation="portrait" />
+        <activity android:name=".View.TrangChu.chitietdiadiem" />
+        <activity android:name=".View.TrangChu.vitri" />
+        <activity android:name=".View.TrangChu.phanhoi" />
+        <activity android:name=".View.TrangChu.chitiethanhtrinh" />
+        <activity android:name=".View.TrangChu.chitietphanthuong" />
+        <activity android:name=".View.TrangChu.themht_thepyc" />
+        <activity android:name=".View.TrangChu.Login" />
+        <activity android:name=".View.TrangChu.Logister" />
+        <activity
+            android:name=".View.TrangChu.tabbed"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".caidat"></activity>
+>>>>>>> tuanhai
     </application>
 
 </manifest>
