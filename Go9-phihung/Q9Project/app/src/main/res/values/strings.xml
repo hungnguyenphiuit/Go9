@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Go9</string>
-    <string name="nav_home">Trang chủ</string>
-    <string name="nav_journey">Hành trình</string>
-    <string name="nav_prize">Phần thưởng</string>
-    <string name="nav_menu">Menu</string>
-</resources>
